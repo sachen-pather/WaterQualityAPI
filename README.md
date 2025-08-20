@@ -4,7 +4,7 @@ View working website in the About section
 
 A .NET Core Web API for managing beach water quality data and community discussions. This API serves beach water quality readings, community posts, and provides PDF parsing capabilities for water quality reports.
 
-## 🌊 Overview
+## Overview
 
 The WaterQualityAPI provides endpoints for:
 - Beach water quality monitoring
@@ -12,7 +12,7 @@ The WaterQualityAPI provides endpoints for:
 - PDF parsing for water quality reports
 - Health monitoring and diagnostics
 
-## 🚀 Live API
+## Live API
 
 **Production URL:** https://waterqualityapi20250812142739.azurewebsites.net
 
@@ -22,7 +22,7 @@ The WaterQualityAPI provides endpoints for:
 - API Documentation: `/swagger` (development only)
 - Debug Info: `/debug/connection`
 
-## 🛠 Technology Stack
+## Technology Stack
 
 - **.NET 8.0** - Web API Framework
 - **Entity Framework Core** - ORM with PostgreSQL provider
@@ -32,7 +32,7 @@ The WaterQualityAPI provides endpoints for:
 - **Dapper** - Micro ORM for optimized queries
 - **Swagger/OpenAPI** - API documentation
 
-## 📊 Database Schema
+## Database Schema
 
 ### Core Tables:
 - **`beaches`** - Beach information and locations
@@ -41,7 +41,7 @@ The WaterQualityAPI provides endpoints for:
 - **`community_discussions`** - General discussions
 - **`community_comments`** - Discussion responses
 
-## 🔧 API Endpoints
+## API Endpoints
 
 ### Beach Management
 ```http
@@ -84,7 +84,7 @@ GET    /health                                  # Health check with database sta
 GET    /debug/connection                        # Database connection info
 ```
 
-## 🗃 Data Models
+## Data Models
 
 ### Beach
 ```json
@@ -124,14 +124,14 @@ GET    /debug/connection                        # Database connection info
 }
 ```
 
-## 🔐 Security & CORS
+## Security & CORS
 
 The API is configured with CORS to allow requests from:
 - `http://localhost:5173` (Local development)
 - `https://*.netlify.app` (Netlify deployments)
 - `https://papaya-yeot-5ff93c.netlify.app` (Production frontend)
 
-## 🌍 Environment Variables
+## Environment Variables
 
 Required environment variables for deployment:
 
@@ -140,7 +140,7 @@ SUPABASE_CONNECTION=Host=aws-0-eu-west-2.pooler.supabase.com;Database=postgres;U
 ASPNETCORE_ENVIRONMENT=Production
 ```
 
-## 🚀 Deployment
+## Deployment
 
 ### Current Deployment
 - **Platform**: Azure App Service (Free F1 tier)
@@ -170,7 +170,7 @@ ASPNETCORE_ENVIRONMENT=Production
    - API: http://localhost:5048
    - Swagger: http://localhost:5048/swagger
 
-## 📋 Features
+## Features
 
 ### PDF Processing
 - Automated parsing of water quality reports
@@ -196,7 +196,7 @@ ASPNETCORE_ENVIRONMENT=Production
 - Error logging and tracking
 - Production diagnostics
 
-## 🔍 API Response Examples
+## API Response Examples
 
 ### Get All Beaches
 ```json
@@ -234,7 +234,7 @@ ASPNETCORE_ENVIRONMENT=Production
 }
 ```
 
-## 🐛 Error Handling
+## Error Handling
 
 The API returns consistent error responses:
 
@@ -252,14 +252,14 @@ Common HTTP status codes:
 - `404` - Resource not found
 - `500` - Internal server error
 
-## 📊 Performance
+## Performance
 
 - **Response time**: < 200ms for most endpoints
 - **Database queries**: Optimized with indexes and eager loading
 - **File uploads**: Streaming processing for large PDFs
 - **Health checks**: Real-time database connectivity monitoring
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -267,21 +267,7 @@ Common HTTP status codes:
 4. Test thoroughly
 5. Submit a pull request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License.
 
-## 🙋‍♂️ Support
-
-For issues and questions:
-- Create an issue on GitHub
-- Check the health endpoint for system status
-- Review logs in Azure App Service diagnostics
-
-## 🔮 Future Enhancements
-
-- [ ] Real-time notifications for water quality alerts
-- [ ] Advanced analytics and reporting
-- [ ] Mobile app API endpoints
-- [ ] Integration with weather data
-- [ ] Machine learning predictions for water quality trends
