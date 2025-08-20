@@ -14,7 +14,7 @@ The WaterQualityAPI provides endpoints for:
 
 ## Live API
 
-**Production URL:** https://waterqualityapi20250812142739.azurewebsites.net
+**Production URL:** (https://papaya-yeot-5ff93c.netlify.app/)
 
 ### Quick Test Endpoints:
 - Health Check: `/health`
