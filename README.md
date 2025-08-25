@@ -1,4 +1,4 @@
-View working website in the About section
+View working website in the About section &
 View the frontend at https://github.com/sachen-pather/water-quality-sa
 
 # WaterQualityAPI Backend
